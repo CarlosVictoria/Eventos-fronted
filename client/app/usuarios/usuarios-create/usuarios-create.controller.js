@@ -15,6 +15,7 @@ class UsuariosCreateComponent {
           .catch(err => {
             console.log("Error al crear el usuario ", err);
             })
+          }
 }
 
 UsuariosCreateComponent.$inject = ['usuariosService'];
