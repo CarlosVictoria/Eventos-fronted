@@ -7,9 +7,9 @@ function usuariosService($resource, API) {
         update: {
             method: 'PUT'
         }
-    })
+    });
 }
 
 usuariosService.$inject = ['$resource', 'API'];
 angular.module('eventosApp')
-  .factory('usuariosService',usuariosService);
+    .factory('usuariosService', usuariosService);
