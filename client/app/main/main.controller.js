@@ -2,24 +2,17 @@
 
 (function() {
 
-class MainController {
+    class MainController {
 
-  constructor($http) {
-    this.$http = $http;
-    this.awesomeThings = [];
-  }
+        constructor() {
 
-  $onInit() {
-    this.$http.get('/api/things').then(response => {
-      this.awesomeThings = response.data;
-    });
-  }
-}
+        }
+    }
 
-angular.module('eventosApp')
-  .component('main', {
-    templateUrl: 'app/main/main.html',
-    controller: MainController
-  });
+    angular.module('eventosApp')
+        .component('main', {
+            templateUrl: 'app/main/main.html',
+            controller: MainController
+        });
 
 })();

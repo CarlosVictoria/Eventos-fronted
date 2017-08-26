@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('eventosApp', [
-        'eventosApp.constants',
         'ngCookies',
         'ngResource',
         'ngSanitize',
