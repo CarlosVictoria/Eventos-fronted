@@ -20,3 +20,13 @@
         </div>
     </div>
 </div>
+<div uib-collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+    <ul class="nav navbar-nav">
+        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+            <a ui-sref="{{item.state}}">{{item.title}}</a>
+        </li>
+        <li><a ui-sref="usuarios-list">usuarios</a></li>
+        <li><a ui-sref="usuarios-create">Registrar</a></li>
+        <li><a ui-sref="login">Inicio Sesion</a></li>
+    </ul>
+</div>
