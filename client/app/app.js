@@ -9,7 +9,7 @@ angular.module('eventosApp', [
         'ui.bootstrap',
         'satellizer'
     ])
-    .constant("API", "")
+    .constant("API", "http://10.72.196.37:8080/Eventos")
 
 //config satellizer
 .config(function(API, $authProvider) {
