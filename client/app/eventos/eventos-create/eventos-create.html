@@ -1,20 +1,18 @@
-<div class="container">
-    <form name="userForm" ng-submit="vm.createUser()">
-
-        <ul>
-            <label for="">Nombre Evento</label>
-            <input type="text" ng-model="vm.evento.nombres">
-        </ul>
-        <ul>
-            <label for="">Lugar</label>
-            <input type="text" ng-model="vm.lugar.apellidos">
-        </ul>
-        <ul>
-            <label for="">Fecha</label>
-            <input type="text" ng-model="vm.fecha.email">
-        </ul>
-        <ul>
-            <button type="submit">Registrar</button>
-        </ul>
-    </form>
+<div class="container"></div>
+<form name="userForm" ng-submit="vm.createUser()">
+    <h2 class="evento">Registro Evento</h2>
+    <div class="form-group">
+        <label for="exampleInputEvento1">Nombre Evento</label>
+        <input type="text" class="form-control" id="exampleInputEvento1" placeholder="Nombre evento" ng-model="vm.evento.nombres">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputLugar1">Lugar</label>
+        <input type="text" class="form-control" id="exampleInputLugar1" placeholder="Lugar / sitio" ng-model="vm.lugar.apellidos">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFecha1">Fecha</label>
+        <input type="text" class="form-control" id="exampleInputFecha1" placeholder="Fecha" ng-model="vm.fecha.email">
+    </div>
+    <button type="submit" class="btn btn-default">Registrar</button>
+</form>
 </div>
