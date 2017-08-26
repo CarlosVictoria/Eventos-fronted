@@ -1,33 +1,30 @@
 <div class="container">
+    <h2 class="create">Registrarse</h2>
     <form name="userForm" ng-submit="vm.createUser()">
-      <ul>
-          <label for="">Tipo Documento</label>
-          <input type="text" ng-model="vm.usuario.tipoDocumento.id.descripcion">
-      </ul>
-        <ul>
-          <label for="">Documento</label>
-          <input  type="text" ng-blur="vm.validarNumDocumento()" ng-model="vm.usuario.numDocumento">
-        </ul>
-        <ul>
-            <label for="">Nombres</label>
-            <input type="text" ng-model="vm.usuario.nombres">
-        </ul>
-        <ul>
-            <label for="">Apellidos</label>
-            <input type="text" ng-model="vm.usuario.apellidos">
-        </ul>
-        <ul>
-            <label for="">Email</label>
-            <input type="text" ng-model="vm.usuario.email">
-        </ul>
-
-        <ul>
-            <label for="">password</label>
-            <input type="password" ng-model="vm.usuario.password">
-        </ul>
-
-        <ul>
-            <button type="submit">Registrar</button>
-        </ul>
+        <div class="form-group">
+            <label for="exampleInputTipoDocumento1">Tipo Documento</label>
+            <input type="text" class="form-control" id="exampleInputTipoDocumento1" placeholder="Tipo documento" ng-model="vm.usuario.tipoDocumento.id.descripcion">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputDocumento1">Documento</label>
+            <input type="text" class="form-control" id="exampleInputDocumento1" placeholder="Documento" ng-blur="vm.validarNumDocumento()" ng-model="vm.usuario.numDocumento">
+        </div>
+        <div class="form-group">
+            <label for="exampleTipoNombresInput1">Nombres</label>
+            <input type="text" class="form-control" id="exampleInputNombres1" placeholder="Nombres" ng-model="vm.usuario.nombres">
+        </div>
+        <div class="form-group">
+            <label for="exampleApellidosInput1">Apellidos</label>
+            <input type="text" class="form-control" id="exampleInputApellidos1" placeholder="Apellidos" ng-model="vm.usuario.apellidos">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model="vm.usuario.email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" ng-model="vm.usuario.password">
+        </div>
+        <button type="submit" class="btn btn-default">Registrar</button>
     </form>
 </div>

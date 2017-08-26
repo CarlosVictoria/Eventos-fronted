@@ -21,6 +21,5 @@ angular.module('eventosApp', [
         $urlRouterProvider
             .otherwise('/');
 
-
         $locationProvider.html5Mode(true);
     });
