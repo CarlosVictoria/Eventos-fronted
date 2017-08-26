@@ -8,6 +8,7 @@ angular.module('eventosApp', [
   'ui.router',
   'ui.bootstrap'
 ])
+  .constant("API", "")
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
       .otherwise('/');
