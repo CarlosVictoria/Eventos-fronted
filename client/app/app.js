@@ -15,7 +15,7 @@ angular.module('eventosApp', [
 .config(function(API, $authProvider) {
         $authProvider.loginUrl = API + '/api/auth/login';
         $authProvider.tokenName = 'token';
-        $authProvider.tokenPrefix = 'videoClub';
+        $authProvider.tokenPrefix = 'eventos';
     })
     .config(function($urlRouterProvider, $locationProvider) {
         $urlRouterProvider
